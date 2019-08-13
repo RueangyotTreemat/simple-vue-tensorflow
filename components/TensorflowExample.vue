@@ -9,8 +9,8 @@
                 <input class="field field-y" v-model="yValues[index]" type="number">
             </div>
         </div>
-        <button class="button-add-example button--green">+</button>
-        <button class="button-train button--green">Train</button>
+        <button class="button-add-example button--green" v-on:click="addItem">+</button>
+        <button class="button-train button--green" v-on:click="train">Train</button>
         
         <div class="predict-controls">
             <h2 class="section col-sm-1">Predicting</h2>
